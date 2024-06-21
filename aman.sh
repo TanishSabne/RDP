@@ -55,5 +55,6 @@ log "Installation completed successfully"
 
 # Install Burp Suite Community Edition
 wget -q --show-progress -O "burp.sh" "$burp_url"
+printf "o\n\ny\n\n" | sh burp.sh
 
 log "Installation completed successfully"
