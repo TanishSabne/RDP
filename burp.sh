@@ -4,4 +4,4 @@ burp_url="https://portswigger.net/burp/releases/startdownload?product=community&
 wget -q --show-progress -O "burp.sh" "$burp_url"
 printf "o\n\ny\n\n" | sh burp.sh
 
-log "Installation Successfull"
+echo "Installation Successfull"
