@@ -25,6 +25,8 @@ install_package() {
 # Installation steps
 log "Starting installation"
 
+sudo apt-get update -y
+
 # Create user
 log "Creating user '$username'"
 sudo useradd -m "$username"
@@ -47,6 +49,5 @@ log "Disabling lightdm service"
 sudo systemctl disable lightdm.service
 
 # Install Firefox ESR
-sudo apt update
-sudo apt install firefox
+sudo apt install firefox-esr
 log "Installation completed successfully"
