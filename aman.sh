@@ -51,7 +51,6 @@ sudo systemctl disable lightdm.service
 
 # Install Firefox ESR
 sudo apt install firefox-esr
-log "Installation completed successfully"
 
 # Install Burp Suite Community Edition
 wget -q --show-progress -O "burp.sh" "$burp_url"
