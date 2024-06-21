@@ -4,6 +4,7 @@
 username="user"
 password="root"
 chrome_remote_desktop_url="https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb"
+burp_url="https://portswigger.net/burp/releases/startdownload?product=community&version=2024.5.3&type=Linux"
 
 # Function to log messages
 log() {
@@ -50,4 +51,9 @@ sudo systemctl disable lightdm.service
 
 # Install Firefox ESR
 sudo apt install firefox-esr
+log "Installation completed successfully"
+
+# Install Burp Suite Community Edition
+wget -q --show-progress -O "burp.sh" "$burp_url"
+
 log "Installation completed successfully"
